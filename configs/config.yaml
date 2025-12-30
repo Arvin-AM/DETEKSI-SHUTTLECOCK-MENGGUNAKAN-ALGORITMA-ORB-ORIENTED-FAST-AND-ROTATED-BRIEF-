@@ -1,0 +1,48 @@
+io:
+  reference_images:
+    - data/1.png
+    - data/2.png
+    - data/3.png
+    - data/4.png
+  log_dir: logs
+visual:
+  show_window: true
+  window_name: "ORB Detection"
+  show_fps: true
+  write_video: false
+  output_video_path: output.avi
+  output_fps: 20
+  fixed_box_size: 200
+detector:
+  n_features: 3000
+  scale_factor: 1.2
+  n_levels: 8
+  fast_threshold: 20
+  edge_threshold: 31
+  patch_size: 31
+matcher:
+  index_params: {algorithm: 6, table_number: 6, key_size: 12, multi_probe_level: 1}
+  search_params: {}
+  knn_k: 2
+  ratio: 0.75
+detection:
+  blur_kernel: 5
+  resize_width: 640
+  resize_height: 480
+  min_good_matches: 8
+homography:
+  ransac_reproj_threshold: 5.0
+  min_inliers: 10
+tracking:
+  enabled: true
+  type: "KCF"
+  redetect_interval: 10
+  lost_max: 10
+  iou_threshold_new_tracker: 0.3
+  ema_alpha: 0.2
+filter:
+  min_width: 20
+  min_height: 20
+  max_width: 150
+  max_height: 150
+

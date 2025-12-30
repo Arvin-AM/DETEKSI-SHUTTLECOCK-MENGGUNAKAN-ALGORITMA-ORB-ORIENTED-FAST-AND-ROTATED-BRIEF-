@@ -1,0 +1,7 @@
+opencv-contrib-python>=4.8
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.8
+pyyaml>=6.0
+scikit-learn>=1.0
+
