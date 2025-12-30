@@ -150,10 +150,7 @@ Berikut adalah contoh hasil deteksi shuttlecock yang dihasilkan oleh sistem.
 
 ### 1️⃣ Hasil Deteksi Tanpa Debug
 Menampilkan hasil akhir deteksi shuttlecock pada frame video.
-
-```
 ![Hasil Deteksi Tanpa Debug](assets/non_debug.png)
-```
 
 > Contoh visualisasi bounding box / penanda posisi shuttlecock.
 
@@ -162,9 +159,8 @@ Menampilkan hasil akhir deteksi shuttlecock pada frame video.
 ### 2️⃣ Hasil Deteksi Dengan Debug
 Menampilkan keypoints ORB dan proses feature matching.
 
-```
 ![Hasil Deteksi Tanpa Debug](assets/debug.png)
-```
+
 
 > Digunakan untuk analisis performa algoritma ORB.
 
